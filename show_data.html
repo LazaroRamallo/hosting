@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <!-- Uso de Caracteres-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodegas Aios</title>
+    <!-- Hoja de estilos footer y header-->
+    <link rel="stylesheet" href="Estilos/estilos.css">
+    <!-- Hoja de estilos Zona Registro-->
+    <link rel="stylesheet" href="Estilos/estilo-inicio.css">
+    <!-- Estilo de animaciones de animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Estilo de fuentes de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Poppins:wght@200&family=Roboto:ital,wght@1,100&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Script para usar iconos de Font awesome-->
+    <script src="https://kit.fontawesome.com/87683d0b06.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <!--Titulo de la pagina-->
+        <h1>AIOS</h1>
+        <!--Subtitulo-->
+        <h3>-Donde nace el buen vino-</h3>
+        <!--Menú de navegacion-->
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="3.info.html">Nosotros</a></li>
+                <li><a href="4.contacto.html">Contacto</a></li>
+                <li><a href="5.registro.html">Registrese</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <p align=center>&nbsp;</p>
+        <h1 align=center>
+            <font size="+1">The following information has been sent as your feedback:
+            </font>
+        </h1>
+
+        <table border="1" align=center width="226">
+            <tr>
+                <th align="center">Form Field</th>
+                <th align="center">Field Value</th>
+            </tr>
+
+            <script language="javascript">
+                var args = location.search.substr(1).split('&');
+                for (var i = 0; i < args.length; ++i) {
+                    var parts = args[i].split('=');
+                    if (parts != null) {
+                        var field = parts[0];
+                        var value = parts[1];
+                        if (value == null) {
+                            value = "null"
+                        } else {
+                            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                        }
+
+                        document.writeln('<tr><td align="center">' + field + '</td>');
+                        document.writeln('<td align="center">' + value + '</td></tr>');
+                    }
+                }
+            </script>
+
+            <noscript>
+  <tr><td>
+  <p>You need to turn on Javascript in your browser.</p>
+
+  <p>In Microsoft Internet Explorer 4 or greater:</p>
+  <ul>
+  <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+  <li>Click on the "Security" tab.</li>
+  <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+  and then click on "Settings...".)</li>
+  <li>Under "Active scripting" make sure "Enable" is selected.</li>
+  </ul>
+
+  <p>In Netscape version 4 or greater:</p>
+  <ul>
+  <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+  <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+  <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+  <li>Click the <b>OK</b> button.</li>
+  </ul>
+
+  </td></tr>
+  </noscript>
+
+        </table>
+    </section>
+    <footer class="pie">
+        <!--Iconos de font awasome (redes sociales)-->
+        <div>
+            <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p id="derechos">Todos los derechos reservados ©2021</p>
+        <p>Beber con moderación. Prohibida su venta a menores de 18 </p>
+    </footer>
+</body>
+
+</html>

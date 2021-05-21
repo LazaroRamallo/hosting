@@ -1,0 +1,134 @@
+/*Estilos para zona Registro*/
+
+section{
+    background: url(../Imagenes/turismo1920.jpg);
+}
+
+.formulario {
+    width: 90%;
+    margin:auto;
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+    padding: 15px;
+    color: #f8f8f8;
+}
+
+/*clase para estilo de label*/
+.niv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: auto;
+}
+
+.niv>div {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+.niv>div>input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/*Color de fondo del cuadro de texto cuando nos posicionamos*/
+input:focus {
+background-color: lightblue;
+}
+
+input::placeholder {
+    font-family:'Caveat', cursive;
+}
+
+.niv>div>label{
+    font-size: 1.25em;
+    text-shadow: 2px 2px 5px #DFB50D;
+}
+
+.niv>div>p{
+    font-size: 1.25em;
+    text-shadow: 2px 2px 5px #DFB50D;
+}
+
+/*id para los botones */
+#botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+button {
+    padding: 10px;
+    width: 70%;
+    transition-duration: 0.4s;
+
+}
+
+button:hover {
+    background-color: #4CAF50; 
+    color: #f8f8f8;
+}
+
+textarea {
+    width: 80%;
+    height: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+select {
+    width: 70%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+
+
+@media only screen and (max-width: 600px)
+{   .formulario{
+    width: 100%;
+}
+    .niv {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: auto;
+        row-gap: 10px;
+    }
+    
+    .niv>div {
+        height: auto;
+        width: 80%;
+        margin: auto;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px)
+{
+    .niv {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: auto;
+        row-gap: 10px;
+    }
+    
+    .niv>div {
+        height: auto;
+        width: 90%;
+        margin: auto;
+        padding: 5px;
+    }
+  
+  
+}

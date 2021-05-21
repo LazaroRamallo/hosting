@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.encabezado {
+    max-width: 100%;
+    background-color: #940D49;
+    text-align: center;
+    color: #F5F1F2;
+    font-size: 1rem;
+}
+
+.encabezado>h1 {
+    padding: 20px 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    animation: lightSpeedInLeft;
+    animation-duration: 2s; 
+}
+
+.encabezado>h3 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.0em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    animation: lightSpeedInLeft;
+    animation-duration: 2s; 
+}
+
+.encabezado nav {
+    background-color: #070707;
+    max-height: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.encabezado ul {
+    max-height: 100%;
+    height: auto;
+
+}
+
+.encabezado>nav>ul>li {
+    display: inline-block;
+    height:100%;
+}
+
+.encabezado a {
+    text-decoration: none;
+    font-family: 'Newsreader', serif;
+    font-size: 1.5em;
+    color: #F5F1F2;
+    padding: 10px 40px;
+    display: block;
+    margin: auto;
+    transition-duration: 0.4s;
+}
+
+.encabezado a:hover {
+    color: #DFB50D;
+    font-size: 1.75em;
+}
+
+body {
+    background-color: #CEE9E4;
+}
+
+.pie {
+    font-size: 1rem;
+    background-color: #070707;
+    text-align: center;
+    color: #F5F1F2;
+    max-width: auto;
+    text-align: right;
+}
+
+.pie>div {
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+.pie>div>a {
+    color: #F5F1F2;
+    padding: 8px;
+    font-size: 2.5em;
+}
+
+.pie a:hover {
+    color: #DFB50D;
+}
+
+#derechos {
+    background-color: #070707;
+    text-align: center;
+    font-family: 'Girassol', cursive;
+    font-size: 1.5em;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.pie p {
+    text-align: center;
+    background-color: #940d49;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1em;
+    height: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px)
+    {   
+        .encabezado>h1 {
+            font-size: 9vw;
+        }
+
+        .encabezado>h3 {
+            font-size: 8vw;
+        }
+
+        .encabezado nav ul li {
+            height:100%;
+            width: 100%;
+        }
+
+        .encabezado a {
+            font-size: 4vw;
+        }
+
+        .pie {
+            text-align: center;
+        }
+
+        .pie>div>a {        
+        font-size: 6vw;
+        }
+        
+        #derechos {
+            font-size:  5vw;
+        
+        }
+        .pie p {
+            font-size: 4vw;
+            
+        }
+}
+
+@media (min-width: 600px) and (max-width: 1200px)
+{
+        .pie {
+            text-align: center;
+        }
+
+        .pie>div>a {        
+        font-size: 4vw;
+        }
+        
+        #derechos {
+            font-size:  3vw;
+        
+        }
+        .pie p {
+            font-size: 2vw;
+        }
+    
+    
+}

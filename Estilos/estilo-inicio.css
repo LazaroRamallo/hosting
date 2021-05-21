@@ -1,0 +1,129 @@
+/*clase ini, se aplica a todo el section*/
+.ini {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*clase para el contenedor que tiene las imagenes y parrafos*/
+.ima {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.ima>div>img {
+    display: block;
+    height: 90%;
+    max-height: 180px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+}
+
+.ima>div>p {
+    text-align: center;
+    width: 80%;
+    height: 170px;
+    padding: 20px 20px 0px;
+    background-color: #EAEDEC;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ini>div {
+    margin: 15px;
+}
+
+.ini>div>p {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    background-color: #EAEDEC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+p>span {
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+.ini>div>a {
+    display: block;
+    text-align: center;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    color: #940D49;
+}
+
+.ini>div>a:hover {
+    animation: pulse;
+    animation-duration: 3s;
+}
+
+@media only screen and (max-width: 600px)
+    {
+        .ima {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,1fr);
+        }
+        
+        .ima>div {
+            margin-bottom: 20px;
+            width: auto;
+            height: 350px;
+        }
+        
+        .ima>div>p {
+            text-align: center;
+            width: 80%;
+            height: 160px;
+            padding: 5px 20px;
+            background-color: #EAEDEC;
+            margin: auto;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+
+@media (min-width: 600px) and (max-width: 1200px)
+{
+    
+        .ima {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2,1fr);
+        }
+        
+        .ima>div {
+            margin-bottom: 20px;
+            width: auto;
+            height: 350px;
+        }
+        
+        .ima>div>p {
+            text-align: center;
+            width: 80%;
+            height: 160px;
+            padding: 5px 20px;
+            background-color: #EAEDEC;
+            margin: auto;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+    
+}

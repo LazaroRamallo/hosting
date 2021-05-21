@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    font-size: 1rem;
+}
+
+h2 {
+    margin: 20px;
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+}
+
+main>aside>ul>li {
+    margin: 10px;
+    list-style: none;
+}
+
+aside{
+    background: url(../Imagenes/otoño1920.jpg);
+    padding: 10px;
+
+}
+
+main>aside>ul>li>a {
+    text-decoration: none;
+    font-family: 'Newsreader', serif;
+    font-size: 1.25em;
+    color: #fff;
+    padding: 5px;
+}
+
+main>aside>ul>li>a:hover {
+    font-size: 1.75em;
+    transition-duration: 0.4s;
+}
+
+div>p {
+    font-family: 'Roboto', sans-serif;
+}
+
+div>div {
+    margin: 20px;
+}
+
+table {
+    border: black 2px solid;
+    margin: auto;
+}
+
+td {
+    border: black 1px solid;
+    padding: 20px 30px;
+    background-color: #C63B78;
+}
+
+h4 {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+section>div {
+    margin: 40px;
+}
+
+section p {
+    text-align: left;
+    font-size: 1em;
+}

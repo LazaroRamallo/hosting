@@ -1,0 +1,65 @@
+.cont {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    background: url(../Imagenes/1920.jpg);
+    color: white ;
+
+      
+}
+
+.cont>h2{
+    color: black;
+    text-align: center;
+    padding: 30px;
+    margin:auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+}
+
+.cont>div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+}
+
+.cont>div>a {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.cont>div>a>img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.cont>p{
+    text-align: center;
+    padding: 30px;
+    margin:auto;
+    font-size: 2em;
+    font-family:  'Bebas Neue', cursive;
+}
+
+@media only screen and (max-width: 1200px)
+{
+
+
+    .cont>div>a>img {
+        display: inline;
+        width: 100%;
+    }
+
+    .cont>div>a {
+        height: 40%;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    
+    }
+    
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <!-- Uso de Caracteres-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodegas Aios</title>
+    <!-- Hoja de estilos footer y header-->
+    <link rel="stylesheet" href="Estilos/estilos.css">
+    <!-- Hoja de estilos Zona Registro-->
+    <link rel="stylesheet" href="Estilos/estilo-registro.css">
+    <!-- Estilo de animaciones de animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Estilo de fuentes de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Poppins:wght@200&family=Roboto:ital,wght@1,100&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Script para usar iconos de Font awesome-->
+    <script src="https://kit.fontawesome.com/87683d0b06.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <!--Titulo de la pagina-->
+        <h1>AIOS</h1>
+        <!--Subtitulo-->
+        <h3>-Donde nace el buen vino-</h3>
+        <!--Menú de navegacion-->
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="3.info.html">Nosotros</a></li>
+                <li><a href="4.contacto.html">Contacto</a></li>
+                <li><a href="5.registro.html">Registrese</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Contenido principal del body-->
+    <section>
+        <div class="formulario">
+            <form action="show_data.html" target="_blank">
+                <div class="niv">
+                    <div>
+                        <label for="firstname">Nombre: </label><br>
+                        <input size="30" type="text" name="firstname" id="firstname" placeholder="Ingrese su nombre aqui..."> <br><br>
+
+                        <label for="lastname">Apellido:</label><br>
+                        <input size="30" type="text" name="lastname" id="lastname" placeholder="Ingrese su apellido aqui..."> <br><br>
+                        
+                        <label for="street">Dirección:</label><br>
+                        <input type="text" name="address" id="street" placeholder="Ingrese su dirección aqui..."> <br><br>
+
+                        <label for="number">Número:</label><br>
+                        <input type="number" name="number" id="number" placeholder="Ingrese el numero..."> <br><br>
+
+                        <label for="city">Ciudad: </label><br>
+                        <input type="text" name="city" id="city" placeholder="Ingrese su ciudad..."> <br><br>
+                    </div>
+
+                    <div>
+                        <label for="zipcode">Código Postal:</label><br>
+                        <input type="text" name="zipcode" id="zipcode" placeholder="Ingrese su codigo postal aqui..."> <br> <br>
+
+                        <label for="telefono">Telefono: </label><br>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono aqui ..."> <br><br>
+
+                        <label for="BirthDate">Fecha Nac.(MM/DD/YYYY): </label><br>
+                        <input type="date" name="birthdate" id="BirthDate"> <br><br>
+
+                        <label for="clave">Clave: </label><br>
+                        <input type="password" name="clave" id="clave" placeholder="xxxxxx"> <br><br>
+
+                        <label for="mail">e-mail: </label><br>
+                        <input type="email" name="mail" id="mail" placeholder="Ingrese su E-mail aqui ..."> <br><br>
+                    </div>
+        
+                    <div>
+                        <p>Eres mayor de edad?
+                            <input type="radio" name="years" value="verdadero" checked>SI
+                            <input type="radio" name="years" value="falso">NO
+                        </p>
+                        <br><br>
+    
+                        <label for="sexo">Sexo:</label>
+                            <select id="sexo" name="sex">
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                                <option value="O">Otro</option>
+                                </select>
+                        <br><br><br>
+                        <p> Cosecha favorita:
+                            <br><br>
+                            <input type="checkbox" name="cosecha" value="Malbec"> Malbec
+                            <input type="checkbox" name="cosecha" value="Cabernet Sauvignon"> Cabernet Sauvignon
+                            <input type="checkbox" name="cosecha" value="Merlot"> Merlot
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <label for="comentarios">Comentarios:</label>
+                        <br><br>
+                        <textarea name="comentarios" rows="10" cols="30" id="comentarios"></textarea>
+                    </div>
+
+                    <div id="botones">
+                        <button type="submit">Enviar</button> 
+                        <button type="reset">Reset</button>
+                    </div>
+                    </div>
+                </div> 
+            </form>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <!--Iconos de font awasome (redes sociales)-->
+        <div>
+            <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p id="derechos">Todos los derechos reservados ©2021</p>
+        <p>Beber con moderación. Prohibida su venta a menores de 18 </p>
+    </footer>
+</body>
+
+</html>
